@@ -1,0 +1,244 @@
+ .user-details {
+   padding: 40px;
+   width: calc(100vw - 380px);
+   margin-left: auto;
+ }
+
+ .top-bar {
+   gap: 20px;
+   background-color: var(--second-color);
+   padding: 20px 30px;
+   border-radius: 8px;
+   color: var(--white);
+   margin-bottom: 30px;
+ }
+
+ .top-bar .img-wrapper {
+   flex-shrink: 0;
+   width: 72px;
+   height: 72px;
+   border-radius: 100%;
+   background-color: var(--white);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .top-bar .img-wrapper img {
+   width: 48px;
+   height: 48px;
+ }
+
+ .top-bar h3 {
+   margin-bottom: 10px;
+ }
+
+ .top-bar p {
+   line-height: 1.6;
+ }
+
+ .personal-info h3 {
+   margin-bottom: 15px;
+ }
+
+ .personal-info .top-content {
+   display: flex;
+   align-items: flex-start;
+ }
+
+ .personal-info .top-content .profile-pic {
+   flex-shrink: 0;
+   width: 144px;
+   height: 144px;
+   border-radius: 100%;
+   margin-left: 30px;
+ }
+
+ .personal-info-form {
+   width: 100%;
+   margin: 32px auto 32px auto;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   align-items: flex-start;
+   color: var(--light-gray);
+ }
+
+ .personal-info-form .form-group {
+   width: 45%;
+   margin-right: 20px;
+   flex: 1 1 42%;
+ }
+
+ .personal-info-form .form-group.submit-wrapper,
+ .personal-info-form .form-group.address {
+   width: 100%;
+   flex: 1 1 100%;
+ }
+
+ .form-group {
+   margin-bottom: 16px;
+   position: relative;
+ }
+
+ .personal-info-form input {
+   position: relative;
+   display: block;
+   width: 100%;
+   border: 1px solid rgba(0, 0, 0, .37);
+   border-radius: 4px;
+   background-color: transparent;
+   margin: 0px auto;
+   padding: 6px 4px 4px 14px;
+   height: 40px;
+   outline: none !important;
+   font-size: 16px;
+   color: rgba(0, 0, 0, 0.85);
+   transition: all .2s ease-in-out;
+ }
+
+ .personal-info-form label {
+   position: absolute;
+   top: 20px;
+   left: 12px;
+   text-align: left;
+   display: inline-block;
+   padding: 0 4px;
+   height: 14px;
+   line-height: 14px;
+   font-size: 14px;
+   font-weight: 400;
+   background: #fff;
+   color: var(--light-gray);
+   text-transform: capitalize;
+   margin: 0px auto;
+   cursor: text;
+   transition: all .15s ease-in-out;
+ }
+
+ .personal-info-form input:hover,
+ .personal-info-form input:focus {
+   border: 1px solid #000;
+ }
+
+ .personal-info-form input:valid+label,
+ .personal-info-form input:focus+label {
+   top: -6px;
+   color: var(--light-gray);
+   font-weight: bold;
+ }
+
+ p a,
+ label a {
+   color: var(--primary-color);
+   font-weight: 600;
+   margin: 0 3px;
+ }
+
+ .submit-wrapper .btn {
+   margin-top: 20px;
+ }
+
+ .checkbox label {
+   margin-left: 5px;
+ }
+
+ .delete-ac {
+   margin: 24px 0;
+   padding: 15px;
+   border-radius: 8px;
+   border: 1px solid var(--extra-light-gray);
+ }
+
+ .delete-ac h5 {
+   margin-bottom: 5px;
+ }
+
+ .delete-ac .confirm-btn {
+   color: #F25773;
+   border: 0;
+   outline: 0;
+   background-color: transparent;
+   cursor: pointer;
+   font-weight: 600;
+   font-size: 16px;
+   padding: 5px 0;
+   margin-top: 10px;
+ }
+
+ .delete-ac .confirm-btn:hover {
+   text-decoration: underline;
+ }
+
+ .personal-info-footer .footer-links {
+   margin-top: 20px;
+   border-top: 1px solid var(--extra-light-gray);
+   padding-top: 15px;
+   gap: 20px;
+ }
+
+ .personal-info-footer .footer-links li a {
+   color: var(--light-gray);
+ }
+
+ .personal-info-footer .footer-links li a:hover {
+   text-decoration: underline;
+   color: var(--black);
+ }
+
+
+ @media screen and (max-width:991px) {
+   .user-details {
+     padding: 0;
+     width: 100%;
+   }
+
+ }
+
+ @media screen and (max-width:767px) {
+   .main-content {
+     padding: 15px;
+   }
+
+   .personal-info .top-content {
+     flex-wrap: wrap;
+     flex-direction: column-reverse;
+   }
+
+   .personal-info .top-content .profile-pic img,
+   .personal-info .top-content .profile-pic {
+     width: 70px;
+     height: 70px;
+     margin-left: 0;
+   }
+
+   .top-bar {
+     flex-direction: column;
+   }
+
+   .top-bar {
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+     padding: 20px 15px;
+   }
+ }
+
+ @media screen and (max-width:480px) {
+   .personal-info-form .form-group {
+     width: 100%;
+     margin-right: 20px;
+     flex: 1 1 100%;
+   }
+
+   .personal-info-form {
+     gap: 0;
+   }
+
+   .personal-info-footer .footer-links {
+     margin-top: 15px;
+     padding-top: 15px;
+     gap: 6px 15px;
+     flex-wrap: wrap;
+   }
+ }

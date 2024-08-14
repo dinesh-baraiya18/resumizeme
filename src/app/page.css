@@ -1,0 +1,24 @@
+.home-page {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.home-page .main-content {
+  flex: 1;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+@media screen and (max-width:767px) {
+  .main-content {
+    padding: 15px;
+  }
+
+  .btn {
+    padding: 12px 35px;
+    font-size: 14px;
+  }
+}
